@@ -9,4 +9,14 @@
     <%= user.email %>
   </p>
 
+  <h2>Micropost</h2>
+  <ul>
+    <% user.microposts.each do |micropost| %>
+      <li>
+        <strong>content:</strong>
+        <%= micropost.content %>
+      </li>
+    <% end %>
+  </ul>
+
 </div>
